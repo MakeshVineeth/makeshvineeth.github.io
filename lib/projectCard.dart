@@ -11,6 +11,7 @@ class ProjectCard extends StatelessWidget {
   ProjectCard({@required this.text, this.url, this.desc});
 
   final FixedValues fixedValues = FixedValues();
+  final cardRadius = BorderRadius.circular(20.0);
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +23,11 @@ class ProjectCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Card(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+              shape: RoundedRectangleBorder(borderRadius: cardRadius),
               elevation: 10.0,
               child: InkWell(
                 onTap: () => _launchURL(),
+                borderRadius: cardRadius,
                 child: IgnorePointer(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
