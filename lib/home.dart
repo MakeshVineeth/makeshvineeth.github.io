@@ -27,8 +27,8 @@ class _HomeAppState extends State<HomeApp> {
                   pause: const Duration(seconds: 2),
                   repeatForever: true,
                   text: [
-                    "Welcome to Makesh Vineeth\'s World",
-                    "Take a look below to find my latest works",
+                    "Welcome to MakeshTech\'s World",
+                    "Take a look below to find our latest works",
                     "Visit Portfolio to know more about me."
                   ],
                   textStyle: TextStyle(
@@ -49,18 +49,21 @@ class _HomeAppState extends State<HomeApp> {
                 children: [
                   Expanded(
                     child: Center(
-                        child: Text(
-                      'OUR PROJECTS:',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20.0,
-                        letterSpacing: fixed_spacing,
+                        child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        'OUR PROJECTS:',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
+                          letterSpacing: fixed_spacing,
+                        ),
                       ),
                     )),
                   ),
                   Expanded(
-                    flex: 3,
+                    flex: 2,
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

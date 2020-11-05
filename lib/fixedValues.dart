@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class FixedValues {
   Color bg = Colors.white;
-  String title = 'Makesh Vineeth\'s World';
+  String title = 'MakeshTech\'s World';
 
   ThemeData themeData(Brightness brightness) {
     return ThemeData(
