@@ -17,28 +17,65 @@ class _HomeAppState extends State<HomeApp> {
         children: [
           Expanded(
             child: Container(
-              color: Colors.red,
+              color: Colors.white70,
               child: Center(
                 child: TypewriterAnimatedTextKit(
-                  speed: const Duration(milliseconds: 100),
+                  speed: const Duration(milliseconds: 150),
+                  pause: const Duration(seconds: 2),
                   repeatForever: true,
                   text: [
                     "Welcome to Makesh Vineeth\'s World",
-                    "Here you can find all my works",
                     "Take a look below to find my latest works",
                     "Visit Portfolio to know more about me."
                   ],
                   textStyle: TextStyle(
                     color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
                   ),
                 ),
               ),
             ),
           ),
           Expanded(
-            child: Container(
-              color: Colors.blue,
-              child: Center(child: Text('Works')),
+            flex: 2,
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    color: Colors.blue,
+                    child: Center(
+                        child: Text(
+                      'My Works:',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20.0,
+                      ),
+                    )),
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Container(
+                    color: Colors.blue,
+                    child: Center(
+                        child: Card(
+                      elevation: 10.0,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 30, vertical: 15),
+                        child: Text(
+                          'Sample',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    )),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
