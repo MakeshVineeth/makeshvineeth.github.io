@@ -7,13 +7,14 @@ class ProjectsList extends StatelessWidget {
     ProjectCard(
       text: 'PORTFOLIO',
       url: 'https://makeshvineeth.github.io/portfolio/',
-      desc: 'About Me. This portfolio is made possible using Flutter.',
+      desc:
+          'My Portfolio made using Flutter. Supports both Dark and Light Modes. You can even set theme to System Default by long-pressing the Theme Button.',
     ),
     ProjectCard(
       text: 'FLUTTER CLOCK',
       url: 'https://makeshvineeth.github.io/world_clock/',
       desc:
-          'A Simple World Clock. Please note that in web version, time doesn\'t work as GitHub supports only static pages.',
+          'A Sleek Online World Clock. Please note that in Web version, Time won\'t get displayed as GitHub Pages does not support server-side features yet.',
     ),
   ];
 

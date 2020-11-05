@@ -44,7 +44,11 @@ class ProjectCard extends StatelessWidget {
                         SizedBox(
                           height: 5.0,
                         ),
-                      if (desc != null) Text(desc),
+                      if (desc != null)
+                        TyperAnimatedTextKit(
+                          text: [desc],
+                          isRepeatingAnimation: false,
+                        ),
                     ],
                   ),
                 ),
