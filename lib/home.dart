@@ -18,9 +18,6 @@ class _HomeAppState extends State<HomeApp> {
       body: FadeIn(
         duration: fixedValues.scaffoldDur,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          mainAxisSize: MainAxisSize.max,
           children: [
             Expanded(
               child: Header(),

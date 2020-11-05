@@ -12,19 +12,20 @@ class SecondRowHome extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child: Center(
-                child: Padding(
+            child: Padding(
               padding: const EdgeInsets.all(10.0),
-              child: Text(
-                'OUR PROJECTS:',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20.0,
-                  letterSpacing: fixedValues.fixedSpacing,
+              child: Center(
+                child: Text(
+                  'OUR PROJECTS:',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20.0,
+                    letterSpacing: fixedValues.fixedSpacing,
+                  ),
                 ),
               ),
-            )),
+            ),
           ),
           Expanded(
             flex: 2,
