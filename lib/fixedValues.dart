@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class FixedValues {
   Color bg = Colors.white;
-  String title = 'MakeshTech\'s World';
+  String title = 'MakeshTech Hub';
 
   final double fixedSpacing = 1.0;
 

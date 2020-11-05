@@ -8,13 +8,13 @@ class ProjectsList extends StatelessWidget {
       text: 'PORTFOLIO',
       url: 'https://makeshvineeth.github.io/portfolio/',
       desc:
-          'My Portfolio made using Flutter. Supports both Dark and Light Modes. You can even set theme to System Default by long-pressing the Theme Button.',
+          'Portfolio made using Flutter. Supports both Dark and Light Modes. You can even set theme to System Default by long-pressing the Theme Button.',
     ),
     ProjectCard(
       text: 'FLUTTER CLOCK',
       url: 'https://makeshvineeth.github.io/world_clock/',
       desc:
-          'A Sleek Online World Clock. Please note that in Web version, Time won\'t get displayed as GitHub Pages does not support server-side features yet.',
+          'A sleek looking Online World Clock App. Please note that in Web version, Time won\'t get displayed as GitHub Pages does not support server-side features yet.',
     ),
   ];
 

@@ -27,29 +27,31 @@ class ProjectCard extends StatelessWidget {
               elevation: 10.0,
               child: InkWell(
                 onTap: () => _launchURL(),
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        text,
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: fixedValues.fixedSpacing,
+                child: IgnorePointer(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 15),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          text,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: fixedValues.fixedSpacing,
+                          ),
                         ),
-                      ),
-                      if (desc != null)
-                        SizedBox(
-                          height: 5.0,
-                        ),
-                      if (desc != null)
-                        TyperAnimatedTextKit(
-                          text: [desc],
-                          isRepeatingAnimation: false,
-                        ),
-                    ],
+                        if (desc != null)
+                          SizedBox(
+                            height: 5.0,
+                          ),
+                        if (desc != null)
+                          TyperAnimatedTextKit(
+                            text: [desc],
+                            isRepeatingAnimation: false,
+                          ),
+                      ],
+                    ),
                   ),
                 ),
               ),

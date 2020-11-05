@@ -13,7 +13,7 @@ class SecondRowHome extends StatelessWidget {
         children: [
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.all(15.0),
               child: Center(
                 child: Text(
                   'OUR PROJECTS:',

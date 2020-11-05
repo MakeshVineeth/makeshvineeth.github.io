@@ -8,8 +8,8 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white70,
-      padding: EdgeInsets.all(10),
+      color: Colors.white,
+      padding: EdgeInsets.all(15),
       child: Center(
         child: TypewriterAnimatedTextKit(
           speed: const Duration(milliseconds: 150),

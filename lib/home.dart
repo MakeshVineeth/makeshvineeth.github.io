@@ -3,6 +3,7 @@ import 'package:makesh_gitpage/header.dart';
 import 'package:makesh_gitpage/secondRowHome.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
 import 'package:makesh_gitpage/fixedValues.dart';
+import 'package:adaptive_theme/adaptive_theme.dart';
 
 class HomeApp extends StatefulWidget {
   @override
@@ -32,9 +33,9 @@ class _HomeAppState extends State<HomeApp> {
       floatingActionButton: FadeIn(
         duration: fixedValues.floatBtnDur,
         child: InkWell(
-          onLongPress: () {},
+          onLongPress: () => AdaptiveTheme.of(context).setSystem(),
           child: FloatingActionButton(
-            onPressed: () {},
+            onPressed: () => AdaptiveTheme.of(context).toggleThemeMode(),
             child: Icon(
               Icons.lightbulb_outline_rounded,
             ),
