@@ -33,7 +33,12 @@ class _HomeAppState extends State<HomeApp> {
       floatingActionButton: FadeIn(
         duration: fixedValues.floatBtnDur,
         child: InkWell(
-          onLongPress: () => AdaptiveTheme.of(context).setSystem(),
+          onLongPress: () {
+            AdaptiveTheme.of(context).setSystem();
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+              content: Text('Changed to System Default Theme!'),
+            ));
+          },
           child: FloatingActionButton(
             onPressed: () => AdaptiveTheme.of(context).toggleThemeMode(),
             child: Icon(
