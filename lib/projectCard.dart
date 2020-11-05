@@ -48,7 +48,9 @@ class ProjectCard extends StatelessWidget {
                         if (desc != null)
                           TyperAnimatedTextKit(
                             text: [desc],
+                            displayFullTextOnTap: true,
                             isRepeatingAnimation: false,
+                            speed: const Duration(milliseconds: 20),
                           ),
                       ],
                     ),

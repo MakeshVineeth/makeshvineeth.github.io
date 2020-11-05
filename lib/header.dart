@@ -14,10 +14,11 @@ class Header extends StatelessWidget {
         child: TypewriterAnimatedTextKit(
           speed: const Duration(milliseconds: 150),
           pause: const Duration(seconds: 2),
-          repeatForever: true,
+          totalRepeatCount: 3,
+          displayFullTextOnTap: true,
           text: [
-            "Welcome to MakeshTech\'s World",
-            "Take a look below to find our latest works",
+            "Welcome to MakeshTech Hub.",
+            "Take a look below to find our latest works.",
             "Visit Portfolio to know more about me."
           ],
           textStyle: TextStyle(

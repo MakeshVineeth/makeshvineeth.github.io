@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class FixedValues {
   Color bg = Colors.white;
+  Color fg = Colors.white;
   String title = 'MakeshTech Hub';
 
   final double fixedSpacing = 1.0;
@@ -15,6 +16,9 @@ class FixedValues {
     return ThemeData(
       brightness: brightness,
       scaffoldBackgroundColor: bg,
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+        foregroundColor: fg,
+      ),
     );
   }
 

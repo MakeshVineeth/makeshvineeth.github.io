@@ -20,8 +20,8 @@ class Home extends StatelessWidget {
       initial: AdaptiveThemeMode.light,
       builder: (theme, darkTheme) => MaterialApp(
         title: fixedValues.title,
-        theme: fixedValues.themeData(Brightness.light),
-        darkTheme: fixedValues.themeDataDark(),
+        theme: theme,
+        darkTheme: darkTheme,
         debugShowCheckedModeBanner: false,
         builder: (context, widget) => ResponsiveWrapper.builder(
           BouncingScrollWrapper.builder(context, HomeApp()),
