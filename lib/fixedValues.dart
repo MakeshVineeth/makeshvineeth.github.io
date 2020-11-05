@@ -4,6 +4,8 @@ class FixedValues {
   Color bg = Colors.white;
   String title = 'MakeshTech\'s World';
 
+  final double fixedSpacing = 1.0;
+
   ThemeData themeData(Brightness brightness) {
     return ThemeData(
       brightness: brightness,
