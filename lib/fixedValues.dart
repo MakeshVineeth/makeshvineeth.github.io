@@ -6,6 +6,11 @@ class FixedValues {
 
   final double fixedSpacing = 1.0;
 
+  // Fade in durations
+  final Duration scaffoldDur = Duration(milliseconds: 1000);
+  final Duration projectCardDur = Duration(milliseconds: 1500);
+  final Duration floatBtnDur = Duration(milliseconds: 2000);
+
   ThemeData themeData(Brightness brightness) {
     return ThemeData(
       brightness: brightness,

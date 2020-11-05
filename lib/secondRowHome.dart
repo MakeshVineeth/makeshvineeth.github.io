@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:makesh_gitpage/projectCard.dart';
 import 'package:makesh_gitpage/fixedValues.dart';
+import 'package:makesh_gitpage/projectsList.dart';
 
 class SecondRowHome extends StatelessWidget {
   final FixedValues fixedValues = FixedValues();
@@ -28,16 +28,7 @@ class SecondRowHome extends StatelessWidget {
           ),
           Expanded(
             flex: 2,
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ProjectCard(text: 'PORTFOLIO'),
-                  ProjectCard(text: 'FLUTTER CLOCK'),
-                ],
-              ),
-            ),
+            child: ProjectsList(),
           ),
         ],
       ),
