@@ -51,7 +51,7 @@ class ProjectCard extends StatelessWidget {
                             text: [desc],
                             displayFullTextOnTap: true,
                             isRepeatingAnimation: false,
-                            speed: const Duration(milliseconds: 20),
+                            speed: const Duration(milliseconds: 15),
                           ),
                       ],
                     ),

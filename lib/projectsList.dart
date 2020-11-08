@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:makesh_gitpage/projectCard.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class ProjectsList extends StatelessWidget {
   // list
@@ -26,10 +27,21 @@ class ProjectsList extends StatelessWidget {
         children: [
           Container(
             constraints: BoxConstraints(minHeight: constraints.maxHeight),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: list,
+            child: AnimationLimiter(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: AnimationConfiguration.toStaggeredList(
+                  duration: const Duration(seconds: 1),
+                  childAnimationBuilder: (widget) => SlideAnimation(
+                    horizontalOffset: MediaQuery.of(context).size.width / 3,
+                    child: FadeInAnimation(
+                      child: widget,
+                    ),
+                  ),
+                  children: list,
+                ),
+              ),
             ),
           ),
         ],
