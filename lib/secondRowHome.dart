@@ -17,7 +17,7 @@ class SecondRowHome extends StatelessWidget {
               padding: const EdgeInsets.all(15.0),
               child: Center(
                 child: Text(
-                  'OUR PROJECTS:',
+                  'OUR PROJECTS',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
