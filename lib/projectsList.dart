@@ -17,6 +17,12 @@ class ProjectsList extends StatelessWidget {
       desc:
           'A sleek looking Online World Clock App. Please note that in Web version, Time won\'t get displayed as GitHub Pages does not support server-side features yet.',
     ),
+    ProjectCard(
+      text: 'LINE BALANCING USING RPW',
+      url: 'https://makeshvineeth.github.io/ranked_positional_weight_method',
+      desc:
+          'An App that calculates the Ranked Positional Weight Method (RPW), it can be used to develop and balance an assembly line. Values are to be separated by spaces.',
+    ),
   ];
 
   @override
