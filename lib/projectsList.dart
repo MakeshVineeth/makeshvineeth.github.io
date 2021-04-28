@@ -23,6 +23,20 @@ class ProjectsList extends StatelessWidget {
       desc:
           'An App that calculates the Ranked Positional Weight Method (RPW), it can be used to develop and balance an assembly line. Values are to be separated by spaces.',
     ),
+    ProjectCard(
+      text: 'Solid Color Fills',
+      url:
+          'https://play.google.com/store/apps/details?id=com.makeshtech.solid_color_fills',
+      desc:
+          'An Open-Source app that can set your favourite color as device wallpaper.',
+    ),
+    ProjectCard(
+      text: 'Calculator Lite',
+      url:
+          'https://play.google.com/store/apps/details?id=com.makeshtech.calculator_lite',
+      desc:
+          'Privacy-friendly Calculator with Minimalism, Endless History and Currency.',
+    ),
   ];
 
   @override

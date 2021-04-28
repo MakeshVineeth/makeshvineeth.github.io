@@ -1,14 +1,10 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:makesh_gitpage/home.dart';
 import 'package:makesh_gitpage/fixedValues.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:adaptive_theme/adaptive_theme.dart';
 
-void main() {
-  runApp(Home());
-  GestureBinding.instance.resamplingEnabled = true;
-}
+void main() => runApp(Home());
 
 class Home extends StatelessWidget {
   final FixedValues fixedValues = FixedValues();

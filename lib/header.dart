@@ -4,6 +4,11 @@ import 'package:makesh_gitpage/fixedValues.dart';
 
 class Header extends StatelessWidget {
   final FixedValues fixedValues = FixedValues();
+  final List<String> texts = [
+    'Welcome to MakeshTech Hub.',
+    'Take a look below to find our latest works.',
+    'Visit Portfolio to know more about me.'
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -11,24 +16,29 @@ class Header extends StatelessWidget {
       color: Colors.white,
       padding: EdgeInsets.all(15),
       child: Center(
-        child: TypewriterAnimatedTextKit(
-          speed: const Duration(milliseconds: 150),
+        child: AnimatedTextKit(
+          animatedTexts: List.generate(texts.length,
+              (index) => _typerAnimatedText(texts.elementAt(index))),
           pause: const Duration(seconds: 2),
           totalRepeatCount: 3,
           displayFullTextOnTap: true,
-          text: [
-            "Welcome to MakeshTech Hub.",
-            "Take a look below to find our latest works.",
-            "Visit Portfolio to know more about me."
-          ],
-          textStyle: TextStyle(
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-            fontSize: 30,
-            letterSpacing: fixedValues.fixedSpacing,
-          ),
         ),
       ),
+    );
+  }
+
+  TextStyle _textStyle() => TextStyle(
+        color: Colors.blue,
+        fontWeight: FontWeight.bold,
+        fontSize: 30,
+        letterSpacing: fixedValues.fixedSpacing,
+      );
+
+  TyperAnimatedText _typerAnimatedText(String text) {
+    return TyperAnimatedText(
+      text,
+      speed: const Duration(milliseconds: 150),
+      textStyle: _textStyle(),
     );
   }
 }
