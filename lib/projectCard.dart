@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:makesh_gitpage/fixedValues.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends StatelessWidget {
   final text;
@@ -11,7 +10,6 @@ class ProjectCard extends StatelessWidget {
   ProjectCard({@required this.text, this.url, this.desc});
 
   final FixedValues fixedValues = FixedValues();
-  final cardRadius = BorderRadius.circular(20.0);
 
   @override
   Widget build(BuildContext context) {
@@ -23,11 +21,10 @@ class ProjectCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Card(
-              shape: RoundedRectangleBorder(borderRadius: cardRadius),
               elevation: 10.0,
               child: InkWell(
-                onTap: () => _launchURL(),
-                borderRadius: cardRadius,
+                onTap: () => fixedValues.launchURL(this.url),
+                borderRadius: fixedValues.cardRadius,
                 child: IgnorePointer(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
@@ -70,12 +67,5 @@ class ProjectCard extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  _launchURL() async {
-    if (this.url != null) {
-      String url = this.url;
-      if (await canLaunch(url)) await launch(url);
-    }
   }
 }

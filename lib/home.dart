@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:makesh_gitpage/footer.dart';
 import 'package:makesh_gitpage/header.dart';
 import 'package:makesh_gitpage/secondRowHome.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
@@ -24,9 +25,10 @@ class _HomeAppState extends State<HomeApp> {
               child: Header(),
             ),
             Expanded(
-              flex: 2,
+              flex: 4,
               child: SecondRowHome(),
             ),
+            Expanded(child: Footer()),
           ],
         ),
       ),
