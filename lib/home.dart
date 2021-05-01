@@ -25,7 +25,7 @@ class _HomeAppState extends State<HomeApp> {
               child: Header(),
             ),
             Expanded(
-              flex: 4,
+              flex: 3,
               child: SecondRowHome(),
             ),
             Expanded(child: Footer()),

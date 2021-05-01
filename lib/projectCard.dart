@@ -33,7 +33,7 @@ class ProjectCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          text,
+                          text.toString().toUpperCase(),
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             letterSpacing: fixedValues.fixedSpacing,
