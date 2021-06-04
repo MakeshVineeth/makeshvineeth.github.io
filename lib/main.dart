@@ -8,6 +8,7 @@ void main() => runApp(Home());
 
 class Home extends StatelessWidget {
   final FixedValues fixedValues = FixedValues();
+
   @override
   Widget build(BuildContext context) {
     return AdaptiveTheme(

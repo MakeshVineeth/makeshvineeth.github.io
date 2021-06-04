@@ -24,6 +24,14 @@ class ProjectsList extends StatelessWidget {
           'An App that calculates the Ranked Positional Weight Method (RPW), it can be used to develop and balance an assembly line. Values are to be separated by spaces.',
     ),
     ProjectCard(
+      text: 'SCCL Logging',
+      url:
+          'https://play.google.com/store/apps/details?id=com.makeshtech.sccl_logging',
+      desc:
+          'An App designed for Exploration Geophysicists for uploading the logistic details of GP Logging directly from the field with the help of Cloud. It can be later retrieved as per management requirements.',
+    ),
+    /*
+     ProjectCard(
       text: 'Solid Color Fills',
       url:
           'https://play.google.com/store/apps/details?id=com.makeshtech.solid_color_fills',
@@ -36,14 +44,7 @@ class ProjectsList extends StatelessWidget {
           'https://play.google.com/store/apps/details?id=com.makeshtech.calculator_lite',
       desc:
           'Privacy-friendly Calculator with Minimalism, Endless History and Currency.',
-    ),
-    ProjectCard(
-      text: 'SCCL Logging',
-      url:
-          'https://play.google.com/store/apps/details?id=com.makeshtech.sccl_logging',
-      desc:
-          'An App designed for Exploration Geophysicists for uploading the logistic details of GP Logging directly from the field with the help of Cloud. It can be later retrieved as per management requirements.',
-    ),
+    ),*/
   ];
 
   @override
