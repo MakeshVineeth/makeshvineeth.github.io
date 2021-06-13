@@ -12,6 +12,13 @@ class ProjectsList extends StatelessWidget {
           'Portfolio made using Flutter. Supports both Dark and Light Modes. You can even set theme to System Default by long-pressing the Theme Button.',
     ),
     ProjectCard(
+      text: 'CoWIN Track Availability',
+      url:
+          'https://play.google.com/store/apps/details?id=com.makeshtech.cowin_track_availability',
+      desc:
+          'An Open-Source App that can track Vaccines in India using CoWIN APIs. Supports Vaccine Availability alerts and ability to add multiple locations to search for the vaccines. Retrieves data directly from the CoWIN Public APIs.',
+    ),
+    ProjectCard(
       text: 'FLUTTER CLOCK',
       url: 'https://play.google.com/store/apps/details?id=com.makeshtech.clock',
       desc:
