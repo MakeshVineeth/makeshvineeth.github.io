@@ -37,14 +37,13 @@ class ProjectsList extends StatelessWidget {
       desc:
           'An App designed for Exploration Geophysicists for uploading the logistic details of GP Logging directly from the field with the help of Cloud. It can be later retrieved as per management requirements.',
     ),
-    /*
-     ProjectCard(
+    ProjectCard(
       text: 'Solid Color Fills',
       url:
           'https://play.google.com/store/apps/details?id=com.makeshtech.solid_color_fills',
       desc:
-          'An Open-Source app that can set your favourite color as device wallpaper.',
-    ),
+          'Make your device colorful using Solid Color Fills! An Open-Source app that can set your favourite color as device wallpaper.',
+    ), /*
     ProjectCard(
       text: 'Calculator Lite',
       url:
