@@ -43,14 +43,14 @@ class ProjectsList extends StatelessWidget {
           'https://play.google.com/store/apps/details?id=com.makeshtech.solid_color_fills',
       desc:
           'Make your device colorful using Solid Color Fills! An Open-Source app that can set your favourite color as device wallpaper.',
-    ), /*
+    ),
     ProjectCard(
       text: 'Calculator Lite',
       url:
           'https://play.google.com/store/apps/details?id=com.makeshtech.calculator_lite',
       desc:
-          'Privacy-friendly Calculator with Minimalism, Endless History and Currency.',
-    ),*/
+          'An Open-Source Calculator that does all the calculations for you. No bloat, just the essentials: Calculator, History & Currency Tabs.',
+    ),
   ];
 
   @override
