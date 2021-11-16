@@ -57,9 +57,10 @@ class ProjectsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) => ListView(
-        physics: AlwaysScrollableScrollPhysics(parent: BouncingScrollPhysics()),
+        physics: const AlwaysScrollableScrollPhysics(
+            parent: BouncingScrollPhysics()),
         scrollDirection: Axis.vertical,
-        cacheExtent: 2000,
+        cacheExtent: 1000,
         children: <Widget>[
           Container(
             constraints: BoxConstraints(minHeight: constraints.maxHeight),

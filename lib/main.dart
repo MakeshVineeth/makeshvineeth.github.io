@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
         darkTheme: darkTheme,
         debugShowCheckedModeBanner: false,
         builder: (context, widget) => ResponsiveWrapper.builder(
-          BouncingScrollWrapper.builder(context, HomeApp()),
+          HomeApp(),
           defaultScale: true,
           breakpoints: <ResponsiveBreakpoint>[
             ResponsiveBreakpoint.resize(480, name: MOBILE),
