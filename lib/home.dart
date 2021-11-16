@@ -28,7 +28,10 @@ class _HomeAppState extends State<HomeApp> {
               flex: 4,
               child: SecondRowHome(),
             ),
-            Expanded(child: Footer()),
+            SizedBox(
+              height: 60,
+              child: Footer(),
+            ),
           ],
         ),
       ),
