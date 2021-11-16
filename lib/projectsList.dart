@@ -53,33 +53,30 @@ class ProjectsList extends StatelessWidget {
     ),
   ];
 
+  final _scrollController = ScrollController();
+
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) => ListView(
-        physics: const AlwaysScrollableScrollPhysics(
-            parent: BouncingScrollPhysics()),
+    return Scrollbar(
+      isAlwaysShown: true,
+      controller: _scrollController,
+      child: SingleChildScrollView(
+        controller: _scrollController,
+        physics: const BouncingScrollPhysics(
+            parent: AlwaysScrollableScrollPhysics()),
         scrollDirection: Axis.vertical,
-        cacheExtent: 1000,
-        children: <Widget>[
-          Container(
-            constraints: BoxConstraints(minHeight: constraints.maxHeight),
-            child: AnimationLimiter(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: AnimationConfiguration.toStaggeredList(
-                  duration: const Duration(seconds: 1),
-                  childAnimationBuilder: (widget) => SlideAnimation(
-                    horizontalOffset: MediaQuery.of(context).size.width / 3,
-                    child: FadeInAnimation(child: widget),
-                  ),
-                  children: list,
-                ),
-              ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: AnimationConfiguration.toStaggeredList(
+            duration: const Duration(seconds: 1),
+            childAnimationBuilder: (widget) => SlideAnimation(
+              horizontalOffset: MediaQuery.of(context).size.width / 3,
+              child: FadeInAnimation(child: widget),
             ),
+            children: list,
           ),
-        ],
+        ),
       ),
     );
   }
