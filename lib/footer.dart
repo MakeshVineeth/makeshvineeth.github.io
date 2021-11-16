@@ -10,6 +10,9 @@ class _FooterState extends State<Footer> {
   final Map<String, String> links = {
     'Contact Us': 'mailto:makeshvineeth9@gmail.com',
     'Privacy Policy': 'https://makeshvineeth.github.io/privacy_policy/',
+    'Play Store':
+        'https://play.google.com/store/apps/dev?id=6977904785627641800',
+    'LinkedIn': 'https://www.linkedin.com/in/makeshvineeth/',
     '© 2021 MakeshTech Inc.': '',
   };
 
@@ -18,35 +21,35 @@ class _FooterState extends State<Footer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: double.maxFinite,
-      width: double.maxFinite,
       color: Color(0xFF333333),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Wrap(
+        padding: const EdgeInsets.all(5.0),
+        child: ListView(
+          cacheExtent: 2000,
+          scrollDirection: Axis.horizontal,
+          physics:
+              AlwaysScrollableScrollPhysics(parent: BouncingScrollPhysics()),
           children: List.generate(
             links.length,
             (index) => hyperlinkText(index),
           ),
-          spacing: 10.0,
-          runSpacing: 5.0,
         ),
       ),
     );
   }
 
-  Widget hyperlinkText(int index) => TextButton(
+  Widget hyperlinkText(int index, {bool isBolder = false}) => TextButton(
         style: TextButton.styleFrom(
           shape: Theme.of(context).cardTheme.shape,
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         ),
         onPressed: () => fixedValues.launchURL(links.values.elementAt(index)),
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(5.0),
           child: Text(
             links.keys.elementAt(index),
-            style: const TextStyle(
-              fontWeight: FontWeight.w600,
-              letterSpacing: 1,
+            style: TextStyle(
+              fontWeight: isBolder ? FontWeight.bold : FontWeight.w600,
               fontSize: 15,
               color: Colors.white,
             ),
