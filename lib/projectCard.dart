@@ -19,7 +19,7 @@ class ProjectCard extends StatelessWidget {
         width: MediaQuery.of(context).size.width / 2,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
+          children: <Widget>[
             Card(
               elevation: 10.0,
               child: InkWell(
@@ -39,13 +39,10 @@ class ProjectCard extends StatelessWidget {
                             letterSpacing: fixedValues.fixedSpacing,
                           ),
                         ),
-                        if (desc != null)
-                          SizedBox(
-                            height: 5.0,
-                          ),
+                        if (desc != null) SizedBox(height: 5.0),
                         if (desc != null)
                           AnimatedTextKit(
-                            animatedTexts: [
+                            animatedTexts: <AnimatedText>[
                               TyperAnimatedText(
                                 desc,
                                 speed: const Duration(milliseconds: 15),
@@ -60,9 +57,7 @@ class ProjectCard extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
-              height: 5,
-            ),
+            SizedBox(height: 5),
           ],
         ),
       ),

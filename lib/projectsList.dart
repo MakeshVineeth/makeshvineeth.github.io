@@ -4,7 +4,7 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class ProjectsList extends StatelessWidget {
   // list
-  final list = [
+  final List<ProjectCard> list = <ProjectCard>[
     ProjectCard(
       text: 'PORTFOLIO',
       url: 'https://makeshvineeth.github.io/portfolio/',
@@ -57,8 +57,10 @@ class ProjectsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) => ListView(
-        physics: BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-        children: [
+        physics: AlwaysScrollableScrollPhysics(parent: BouncingScrollPhysics()),
+        scrollDirection: Axis.vertical,
+        cacheExtent: 2000,
+        children: <Widget>[
           Container(
             constraints: BoxConstraints(minHeight: constraints.maxHeight),
             child: AnimationLimiter(
@@ -69,9 +71,7 @@ class ProjectsList extends StatelessWidget {
                   duration: const Duration(seconds: 1),
                   childAnimationBuilder: (widget) => SlideAnimation(
                     horizontalOffset: MediaQuery.of(context).size.width / 3,
-                    child: FadeInAnimation(
-                      child: widget,
-                    ),
+                    child: FadeInAnimation(child: widget),
                   ),
                   children: list,
                 ),

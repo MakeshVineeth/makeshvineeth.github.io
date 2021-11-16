@@ -9,14 +9,13 @@ class FixedValues {
   final double fixedSpacing = 1.0;
 
   // Fade in durations
-  final Duration scaffoldDur = Duration(milliseconds: 1000);
-  final Duration projectCardDur = Duration(milliseconds: 1500);
-  final Duration floatBtnDur = Duration(milliseconds: 2000);
+  final Duration scaffoldDur = const Duration(milliseconds: 1000);
+  final Duration projectCardDur = const Duration(milliseconds: 1500);
+  final Duration floatBtnDur = const Duration(milliseconds: 2000);
 
   final cardRadius = BorderRadius.circular(20.0);
 
-  ThemeData themeData(Brightness brightness) {
-    return ThemeData(
+  ThemeData themeData(Brightness brightness) => ThemeData(
         brightness: brightness,
         scaffoldBackgroundColor: bg,
         floatingActionButtonTheme: FloatingActionButtonThemeData(
@@ -24,8 +23,8 @@ class FixedValues {
         ),
         cardTheme: CardTheme(
           shape: RoundedRectangleBorder(borderRadius: cardRadius),
-        ));
-  }
+        ),
+      );
 
   ThemeData themeDataDark() {
     bg = Colors.black87;

@@ -23,7 +23,7 @@ class Home extends StatelessWidget {
         builder: (context, widget) => ResponsiveWrapper.builder(
           BouncingScrollWrapper.builder(context, HomeApp()),
           defaultScale: true,
-          breakpoints: [
+          breakpoints: <ResponsiveBreakpoint>[
             ResponsiveBreakpoint.resize(480, name: MOBILE),
             ResponsiveBreakpoint.autoScale(800, name: TABLET),
             ResponsiveBreakpoint.resize(1000, name: DESKTOP),

@@ -11,7 +11,7 @@ class SecondRowHome extends StatelessWidget {
       padding: EdgeInsets.all(15),
       color: Colors.blue,
       child: Row(
-        children: [
+        children: <Widget>[
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(15.0),

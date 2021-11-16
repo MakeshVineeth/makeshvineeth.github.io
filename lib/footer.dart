@@ -24,8 +24,10 @@ class _FooterState extends State<Footer> {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Wrap(
-          children:
-              List.generate(links.length, (index) => hyperlinkText(index)),
+          children: List.generate(
+            links.length,
+            (index) => hyperlinkText(index),
+          ),
           spacing: 10.0,
           runSpacing: 5.0,
         ),
@@ -33,24 +35,22 @@ class _FooterState extends State<Footer> {
     );
   }
 
-  Widget hyperlinkText(int index) {
-    return TextButton(
-      style: TextButton.styleFrom(
-        shape: Theme.of(context).cardTheme.shape,
-      ),
-      onPressed: () => fixedValues.launchURL(links.values.elementAt(index)),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Text(
-          links.keys.elementAt(index),
-          style: TextStyle(
-            fontWeight: FontWeight.w600,
-            letterSpacing: 1,
-            fontSize: 15,
-            color: Colors.white,
+  Widget hyperlinkText(int index) => TextButton(
+        style: TextButton.styleFrom(
+          shape: Theme.of(context).cardTheme.shape,
+        ),
+        onPressed: () => fixedValues.launchURL(links.values.elementAt(index)),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            links.keys.elementAt(index),
+            style: const TextStyle(
+              fontWeight: FontWeight.w600,
+              letterSpacing: 1,
+              fontSize: 15,
+              color: Colors.white,
+            ),
           ),
         ),
-      ),
-    );
-  }
+      );
 }
