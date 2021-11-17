@@ -22,7 +22,7 @@ class ProjectCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Card(
-              elevation: 5.0,
+              elevation: 2.0,
               child: InkWell(
                 onTap: () => fixedValues.launchURL(this.url),
                 borderRadius: fixedValues.cardRadius,

@@ -22,7 +22,7 @@ class ProjectsList extends StatelessWidget {
       text: 'FLUTTER CLOCK',
       url: 'https://play.google.com/store/apps/details?id=com.makeshtech.clock',
       desc:
-          'A sleek looking Online World Clock App. Please note that in Web version, Time won\'t get displayed as GitHub Pages does not support server-side features yet.',
+          'A sleek looking Online World Clock App that displays real time data along with corresponding flags using the WorldTimeAPI.',
     ),
     ProjectCard(
       text: 'LINE BALANCING USING RPW',
