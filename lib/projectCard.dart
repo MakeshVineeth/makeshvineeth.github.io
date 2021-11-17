@@ -16,6 +16,7 @@ class ProjectCard extends StatelessWidget {
     return FadeIn(
       duration: fixedValues.projectCardDur,
       child: Container(
+        color: Colors.transparent,
         width: MediaQuery.of(context).size.width / 2,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
