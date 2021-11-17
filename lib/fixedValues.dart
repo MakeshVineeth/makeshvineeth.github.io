@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -15,7 +17,7 @@ class FixedValues {
 
   final cardRadius = BorderRadius.circular(20.0);
 
-  ThemeData themeData(Brightness brightness) => ThemeData(
+  ThemeData themeData(Brightness brightness, BuildContext context) => ThemeData(
         brightness: brightness,
         scaffoldBackgroundColor: bg,
         floatingActionButtonTheme: FloatingActionButtonThemeData(
@@ -23,6 +25,11 @@ class FixedValues {
         ),
         cardTheme: CardTheme(
           shape: RoundedRectangleBorder(borderRadius: cardRadius),
+        ),
+        textTheme: TextTheme(
+          bodyText2: Theme.of(context).textTheme.bodyText2.copyWith(
+            fontFeatures: const [FontFeature.proportionalFigures()],
+          ),
         ),
       );
 

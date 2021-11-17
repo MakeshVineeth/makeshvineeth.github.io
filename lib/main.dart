@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
     return MaterialApp(
       title: fixedValues.title,
       themeMode: ThemeMode.light,
-      theme: fixedValues.themeData(Brightness.light),
+      theme: fixedValues.themeData(Brightness.light, context),
       debugShowCheckedModeBanner: false,
       builder: (context, widget) => ResponsiveWrapper.builder(
         HomeApp(),
