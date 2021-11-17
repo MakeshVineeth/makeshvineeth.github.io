@@ -45,7 +45,7 @@ class _FooterState extends State<Footer> {
         ),
         onPressed: () => fixedValues.launchURL(links.values.elementAt(index)),
         child: Padding(
-          padding: const EdgeInsets.all(5.0),
+          padding: const EdgeInsets.symmetric(horizontal: 1),
           child: Text(
             links.keys.elementAt(index),
             style: TextStyle(

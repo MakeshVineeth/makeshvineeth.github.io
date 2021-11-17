@@ -26,11 +26,6 @@ class FixedValues {
         ),
       );
 
-  ThemeData themeDataDark() {
-    bg = Colors.black87;
-    return themeData(Brightness.dark);
-  }
-
   void launchURL(String url) async {
     if (url != null && url.isNotEmpty) {
       url = Uri.encodeFull(url);
