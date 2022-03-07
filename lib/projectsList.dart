@@ -58,7 +58,7 @@ class ProjectsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scrollbar(
-      isAlwaysShown: true,
+      thumbVisibility: true,
       controller: _scrollController,
       child: SingleChildScrollView(
         controller: _scrollController,

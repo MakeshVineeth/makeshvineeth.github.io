@@ -13,7 +13,7 @@ class _FooterState extends State<Footer> {
     'Play Store':
         'https://play.google.com/store/apps/dev?id=6977904785627641800',
     'LinkedIn': 'https://www.linkedin.com/in/makeshvineeth/',
-    '© 2021 MakeshTech Inc.': '',
+    '© 2022 MakeshTech Inc.': '',
   };
 
   final FixedValues fixedValues = FixedValues();

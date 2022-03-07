@@ -1,7 +1,7 @@
 name: makesh_gitpage
 description: MakeshTech GitHub Landing Page.
 publish_to: 'none'
-version: 2.0.0+2
+version: 3.0.0+3
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -12,8 +12,8 @@ dependencies:
   animated_text_kit: ^4.2.1
   flutter_fadein: ^2.0.0
   flutter_staggered_animations: ^1.0.0
-  responsive_framework: ^0.1.5
-  url_launcher: ^6.0.13
+  responsive_framework: ^0.1.7
+  url_launcher: ^6.0.20
 
 dev_dependencies:
   flutter_test:
