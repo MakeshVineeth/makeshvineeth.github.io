@@ -24,7 +24,7 @@ class ProjectCard extends StatelessWidget {
             Card(
               elevation: 2.0,
               child: InkWell(
-                onTap: () => fixedValues.launchURL(this.url),
+                onTap: () => fixedValues.launchThisUrl(this.url),
                 borderRadius: fixedValues.cardRadius,
                 child: IgnorePointer(
                   child: Padding(

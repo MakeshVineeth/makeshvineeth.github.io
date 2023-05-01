@@ -27,16 +27,16 @@ class FixedValues {
           shape: RoundedRectangleBorder(borderRadius: cardRadius),
         ),
         textTheme: TextTheme(
-          bodyText2: Theme.of(context).textTheme.bodyText2.copyWith(
+          bodyMedium: Theme.of(context).textTheme.bodyMedium!.copyWith(
             fontFeatures: const [FontFeature.proportionalFigures()],
           ),
         ),
       );
 
-  void launchURL(String url) async {
-    if (url != null && url.isNotEmpty) {
-      url = Uri.encodeFull(url);
-      if (await canLaunch(url)) await launch(url);
+  void launchThisUrl(String url) async {
+    if (url.isNotEmpty) {
+      Uri uri = Uri.parse(url);
+      await launchUrl(uri);
     }
   }
 }

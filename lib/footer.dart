@@ -40,10 +40,9 @@ class _FooterState extends State<Footer> {
 
   Widget hyperlinkText(int index, {bool isBolder = false}) => TextButton(
         style: TextButton.styleFrom(
-          shape: Theme.of(context).cardTheme.shape,
           tapTargetSize: MaterialTapTargetSize.shrinkWrap,
         ),
-        onPressed: () => fixedValues.launchURL(links.values.elementAt(index)),
+        onPressed: () => fixedValues.launchThisUrl(links.values.elementAt(index)),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 1),
           child: Text(

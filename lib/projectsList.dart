@@ -14,7 +14,7 @@ class ProjectsList extends StatelessWidget {
     ProjectCard(
       text: 'CoWIN Track Availability',
       url:
-          'https://play.google.com/store/apps/details?id=com.makeshtech.cowin_track_availability',
+          'https://github.com/MakeshVineeth/cowin_track_availability',
       desc:
           'An Open-Source App that can track Vaccines in India using CoWIN APIs. Supports Vaccine Availability alerts and ability to add multiple locations to search for the vaccines. Retrieves data directly from the CoWIN Public APIs.',
     ),

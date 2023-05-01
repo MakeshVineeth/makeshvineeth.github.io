@@ -15,14 +15,13 @@ class Home extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: fixedValues.themeData(Brightness.light, context),
       debugShowCheckedModeBanner: false,
-      builder: (context, widget) => ResponsiveWrapper.builder(
-        HomeApp(),
-        defaultScale: true,
-        breakpoints: <ResponsiveBreakpoint>[
-          ResponsiveBreakpoint.resize(480, name: MOBILE),
-          ResponsiveBreakpoint.autoScale(800, name: TABLET),
-          ResponsiveBreakpoint.resize(1000, name: DESKTOP),
-          ResponsiveBreakpoint.autoScale(2460, name: '4K'),
+      builder: (context, widget) => ResponsiveBreakpoints.builder(
+        child: HomeApp(),
+        breakpoints: [
+          const Breakpoint(start: 0, end: 450, name: MOBILE),
+          const Breakpoint(start: 451, end: 800, name: TABLET),
+          const Breakpoint(start: 801, end: 1920, name: DESKTOP),
+          const Breakpoint(start: 1921, end: double.infinity, name: '4K'),
         ],
       ),
     );
