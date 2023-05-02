@@ -58165,7 +58165,7 @@ case 4:case 3:return A.Z(null,r)}})
 return A.a_($async$n9,r)}}
 A.qk.prototype={
 am(){var s=t.N
-return new A.GP(A.aG(["Contact Us","mailto:makeshvineeth9@gmail.com","Privacy Policy","https://makeshvineeth.github.io/privacy_policy/","Play Store","https://play.google.com/store/apps/dev?id=6977904785627641800","LinkedIn","https://www.linkedin.com/in/makeshvineeth/","\xa9 2022 MakeshTech Inc.",""],s,s),A.qf(),B.j)}}
+return new A.GP(A.aG(["Contact Us","mailto:makeshvineeth9@gmail.com","Privacy Policy","https://makeshvineeth.github.io/privacy_policy/","Play Store","https://play.google.com/store/apps/dev?id=6977904785627641800","LinkedIn","https://www.linkedin.com/in/makeshvineeth/","\xa9 2023 MakeshTech Inc.",""],s,s),A.qf(),B.j)}}
 A.GP.prototype={
 O(a){var s,r,q,p=null,o=this.d.a,n=J.Ro(o,t.cl)
 for(s=0;s<o;++s)n[s]=this.YT(s)
