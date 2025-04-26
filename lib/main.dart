@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:makesh_gitpage/home.dart';
-import 'package:makesh_gitpage/fixedValues.dart';
+import 'package:makesh_gitpage/fixed_values.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 void main() => runApp(Home());
 
 class Home extends StatelessWidget {
   final FixedValues fixedValues = FixedValues();
+
+  Home({super.key});
 
   @override
   Widget build(BuildContext context) {

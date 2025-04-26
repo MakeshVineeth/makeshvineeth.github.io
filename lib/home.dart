@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:makesh_gitpage/footer.dart';
 import 'package:makesh_gitpage/header.dart';
-import 'package:makesh_gitpage/secondRowHome.dart';
+import 'package:makesh_gitpage/second_row_home.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
-import 'package:makesh_gitpage/fixedValues.dart';
+import 'package:makesh_gitpage/fixed_values.dart';
 
 class HomeApp extends StatefulWidget {
+  const HomeApp({super.key});
+
   @override
-  _HomeAppState createState() => _HomeAppState();
+  HomeAppState createState() => HomeAppState();
 }
 
-class _HomeAppState extends State<HomeApp> {
+class HomeAppState extends State<HomeApp> {
   final FixedValues fixedValues = FixedValues();
 
   @override

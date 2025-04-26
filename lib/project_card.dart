@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:makesh_gitpage/fixedValues.dart';
+import 'package:makesh_gitpage/fixed_values.dart';
 import 'package:flutter_fadein/flutter_fadein.dart';
 
 class ProjectCard extends StatelessWidget {
-  final text;
-  final url;
-  final desc;
-  ProjectCard({@required this.text, this.url, this.desc});
+  final String text;
+  final String url;
+  final String desc;
+
+  ProjectCard({super.key, required this.text, this.url = '', this.desc = ''});
 
   final FixedValues fixedValues = FixedValues();
 
@@ -24,12 +25,14 @@ class ProjectCard extends StatelessWidget {
             Card(
               elevation: 2.0,
               child: InkWell(
-                onTap: () => fixedValues.launchThisUrl(this.url),
+                onTap: () => fixedValues.launchThisUrl(url),
                 borderRadius: fixedValues.cardRadius,
                 child: IgnorePointer(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 15),
+                      horizontal: 30,
+                      vertical: 15,
+                    ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -40,8 +43,8 @@ class ProjectCard extends StatelessWidget {
                             letterSpacing: fixedValues.fixedSpacing,
                           ),
                         ),
-                        if (desc != null) SizedBox(height: 5.0),
-                        if (desc != null)
+                        if (desc != '') SizedBox(height: 5.0),
+                        if (desc != '')
                           AnimatedTextKit(
                             animatedTexts: <AnimatedText>[
                               TyperAnimatedText(

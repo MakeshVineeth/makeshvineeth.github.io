@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -23,7 +22,7 @@ class FixedValues {
         floatingActionButtonTheme: FloatingActionButtonThemeData(
           foregroundColor: fg,
         ),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           shape: RoundedRectangleBorder(borderRadius: cardRadius),
         ),
         textTheme: TextTheme(

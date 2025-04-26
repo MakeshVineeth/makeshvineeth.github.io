@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:makesh_gitpage/projectCard.dart';
+import 'package:makesh_gitpage/project_card.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 class ProjectsList extends StatelessWidget {
@@ -54,6 +54,8 @@ class ProjectsList extends StatelessWidget {
   ];
 
   final _scrollController = ScrollController();
+
+  ProjectsList({super.key});
 
   @override
   Widget build(BuildContext context) {

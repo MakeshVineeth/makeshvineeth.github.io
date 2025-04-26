@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:makesh_gitpage/fixedValues.dart';
-import 'package:makesh_gitpage/projectsList.dart';
+import 'package:makesh_gitpage/fixed_values.dart';
+import 'package:makesh_gitpage/projects_list.dart';
 
 class SecondRowHome extends StatelessWidget {
   final FixedValues fixedValues = FixedValues();
+
+  SecondRowHome({super.key});
 
   @override
   Widget build(BuildContext context) {

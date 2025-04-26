@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:makesh_gitpage/fixedValues.dart';
+import 'package:makesh_gitpage/fixed_values.dart';
 
 class Header extends StatelessWidget {
   final FixedValues fixedValues = FixedValues();
@@ -9,6 +9,8 @@ class Header extends StatelessWidget {
     'Take a look below to find our latest works.',
     'Visit Portfolio to know more about me.'
   ];
+
+  Header({super.key});
 
   @override
   Widget build(BuildContext context) {

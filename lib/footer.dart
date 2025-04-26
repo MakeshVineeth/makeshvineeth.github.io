@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:makesh_gitpage/fixedValues.dart';
+import 'package:makesh_gitpage/fixed_values.dart';
 
 class Footer extends StatefulWidget {
+  const Footer({super.key});
+
   @override
-  _FooterState createState() => _FooterState();
+  FooterState createState() => FooterState();
 }
 
-class _FooterState extends State<Footer> {
+class FooterState extends State<Footer> {
   final Map<String, String> links = {
     'Contact Us': 'mailto:makeshvineeth9@gmail.com',
     'Privacy Policy': 'https://makeshvineeth.github.io/privacy_policy/',
     'Play Store':
         'https://play.google.com/store/apps/dev?id=6977904785627641800',
     'LinkedIn': 'https://www.linkedin.com/in/makeshvineeth/',
-    '© 2023 MakeshTech Inc.': '',
+    '© 2025 MakeshTech Inc.': '',
   };
 
   final FixedValues fixedValues = FixedValues();
